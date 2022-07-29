@@ -49,8 +49,8 @@ public class FanController {
 	}
 	
 	// Print current fan setting
-	private static void observeFan(CeilingFan thisFan) {
-		int currentSetting = thisFan.checkFanSetting();
+	private static void observeFan(CeilingFan newFan) {
+		int currentSetting = newFan.checkFanSetting();
 		if (currentSetting == 0) {
 			System.out.println("The fan is not moving.");
 		}
